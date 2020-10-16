@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+class Main {
+	public static void main (String[] args) {
+        Scanner my=new Scanner(System.in);
+		int N= my.nextInt();
+		int arr[][]=new int[N][N];
+		for(int i=N-1;i>=0;i--){
+			for(int j=N-1;j>=0;j--){
+				arr[i][j]=my.nextInt();
+			}
+		  }
+		for(int i=N-1;i>=0;i--){
+			for(int j=0;j<N;j++){
+				System.out.print(arr[j][i]+" ");
+			}
+			System.out.println();
+	}
+		System.out.println();
+		for(int i=0;i<N;i++){
+			for(int j=0;j<N;j++){
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.println();
+	}
+}
+}
